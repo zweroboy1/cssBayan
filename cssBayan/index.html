@@ -7,27 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Bayan</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1 class="title">CSS Bayan</h1>
-    <div class="container">
-        <div class="meme-container">
-            <input class="radio" type="radio" name="meme" id="meme1" value="meme1" checked>
-            <label for="meme1">Meme text text text text 1<div class="img"></div></label>
+    <main class="main">
+        <h1 class="title">CSS Bayan</h1>
+        <div class="container">
+            <!--
+            <div class="meme-container">
+                <input class="radio" type="radio" name="meme" id="meme1" value="meme1" checked>
+                <label for="meme1"><span>Meme text text text text 1</span><span>X</span><img
+                        src="images/work-life.png"></img></label>
+            </div>
+            Keep calm and carry on
+            Work-life balance
+            Dude, where is JS 
+            Relax and take it easy
+            -->
+            <div class="meme">
+                <label class="meme__container" for="meme1">
+                    <input class="meme__radio" type="radio" name="meme" id="meme1" value="meme1" checked>
+                    <span class="meme__title">You cant just copy and paste CSS</span>
+                    <span class="meme__icon">x</span>
+                    <img src="images/you-cant.png" class="meme__img" alt="funny meme">
+                </label>
+            </div>
+            <div class="meme">
+
+                <label class="meme__container" for="meme2">
+                    <input class="meme__radio" type="radio" name="meme" id="meme2" value="meme2">
+                    <span class="meme__title">Work-life balance</span>
+                    <span class="meme__icon">x</span>
+                    <img src="images/work-life.png" class="meme__img" alt="funny meme">
+                </label>
+            </div>
+            <div class="meme">
+                <label class="meme__container" for="meme3">
+                    <input class="meme__radio" type="radio" name="meme" id="meme3" value="meme3">
+                    <span class="meme__title">Relax and take it easy</span>
+                    <span class="meme__icon">x</span>
+                    <img src="images/relax.png" class="meme__img" alt="funny meme">
+                </label>
+            </div>
 
         </div>
-        <div class="meme-container">
-            <input class="radio" type="radio" name="meme" id="meme2" value="meme2">
-            <label for="meme2">Meme text text text text 2</label>
-            <div class="img"></div>
-        </div>
-        <div class="meme-container">
-            <input class="radio" type="radio" name="meme" id="meme3" value="meme3">
-            <label for="meme3">Meme text text text text 3</label>
-            <div class="img"></div>
-        </div>
-    </div>
+
+    </main>
+
 </body>
 
 </html>
